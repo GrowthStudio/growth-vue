@@ -1,0 +1,30 @@
+cache: yarn
+before_install:
+- nvm install 6
+- node --version
+
+addons:
+  apt:
+    sources:
+      - sourceline: 'deb https://dl.yarnpkg.com/debian/ stable main'
+        key_url: 'https://dl.yarnpkg.com/debian/pubkey.gpg'
+    packages:
+      - yarn
+
+install:
+- yarn install
+
+script:
+- npm run lint
+- npm test
+
+after_script:
+- cat ./test/unit/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
+notifications:
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/8deddc25942881f178e4
+    on_success: change
+    on_failure: always
+    on_start: never

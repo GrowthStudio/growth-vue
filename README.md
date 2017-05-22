@@ -1,5 +1,9 @@
 # growth-vue
 
+[![Build Status](https://travis-ci.org/GrowthStudio/growth-vue.svg?branch=master)](https://travis-ci.org/GrowthStudio/growth-vue)
+
+
+
 > The Vue version of Growth.
 
 ## Build Setup
