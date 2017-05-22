@@ -1,4 +1,5 @@
 cache: yarn
+jdk: oraclejdk8
 before_install:
 - nvm install 6
 - node --version
@@ -16,6 +17,7 @@ install:
 
 script:
 - npm run lint
+- npm install -g coveralls
 - npm test
 
 after_script:
