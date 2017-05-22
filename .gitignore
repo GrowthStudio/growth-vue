@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+# More...
+.DS_Store
+.vscode
+.idea
+dist/
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
