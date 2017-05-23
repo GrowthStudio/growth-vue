@@ -1,8 +1,7 @@
 # growth-vue
 
 [![Build Status](https://travis-ci.org/GrowthStudio/growth-vue.svg?branch=master)](https://travis-ci.org/GrowthStudio/growth-vue)
-
-
+[![Coverage Status](https://coveralls.io/repos/github/GrowthStudio/growth-vue/badge.svg)](https://coveralls.io/github/GrowthStudio/growth-vue)
 
 > The Vue version of Growth.
 
